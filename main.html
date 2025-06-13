@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lunch Table</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-layer"></div>
+
+  <div class="scale-wrapper">
+    
+    <div class="indo-plate">
+      <img class="indo-plate-bg" src="assets/plate.png" alt="Indonesian plate" />
+    
+      <div class="indo-rice-group" data-type="rice">
+        <img class="indo-rice1 indoSection" src="assets/indorice1.png" />
+        <img class="indo-rice2 indoSection" src="assets/indorice2.png" />
+        <img class="indo-rice3 indoSection" src="assets/indorice3.png" />
+      </div>
+    
+      <div class="indo-egg-group" data-type="egg">
+        <img class="indo-egg indoSection" src="assets/friedegg.png" />
+      </div>
+    
+      <div class="indo-kerupuk-group" data-type="kerupuk">
+        <img class="indo-kerupuk1 indoSection" src="assets/kerpuk1.png" />
+        <img class="indo-kerupuk2 indoSection" src="assets/kerpuk2.png" />
+      </div>
+    </div>
+  
+    
+
+    <!-- KOREAN LUNCHBOX -->
+    <div class="lunchbox">
+      <img class="lunchbox-bg" src="assets/lunchbox.png" alt="lunchbox" />
+
+      <div class="rice-group" data-type="rice">
+        <img class="rice1 riceSection" src="assets/rice1.png" />
+        <img class="rice2 riceSection" src="assets/rice2.png" />
+        <img class="rice3 riceSection" src="assets/rice3.png" />
+        <img class="rice4 riceSection" src="assets/rice4.png" />
+      </div>
+
+      <div class="kimchi-group" data-type="kimchi">
+        <img class="kimchi1 kimchiSection" src="assets/kimchi1.png" />
+        <img class="kimchi2 kimchiSection" src="assets/kimchi2.png" />
+        <img class="kimchi3 kimchiSection" src="assets/kimchi3.png" />
+      </div>
+
+      <div class="egg-group" data-type="egg">
+        <img class="egg1 eggSection" src="assets/egg1.png" />
+        <img class="egg2 eggSection" src="assets/egg2.png" />
+        <img class="egg3 eggSection" src="assets/egg3.png" />
+      </div>
+    </div>
+
+  </div>
+  <audio id="biteSound" src="assets/eating.mp3" preload="auto"></audio>
+
+  <div id="indo-speech-bubble" class="speech yellow-bubble hidden"></div>
+  <div id="speech-bubble" class="speech hidden"></div>
+  <div id="narrative-text" class="narrative hidden"></div>
+  <script src="script.js"></script>
+</body>
+</html>

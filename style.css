@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  background: #fffaf0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  font-family: gaegu;
+  position: relative;
+}
+
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('assets/table.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.scale-wrapper {
+  position: relative;
+  transform: scale(0.6);
+  transform-origin: top center;
+  width: 1000px;
+  height: 1500px; /* enough height for both top and bottom plates */
+}
+
+/* ===============================
+   INDONESIAN PLATE - TOP
+=============================== */
+.indo-plate {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  z-index: 2;
+}
+
+.indo-plate-bg {
+  width: 100%;
+  display: block;
+}
+
+.indo-rice-group,
+.indo-egg-group,
+.indo-kerupuk-group {
+  position: absolute;
+}
+
+.indoSection {
+  position: absolute;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.indoSection:hover {
+  opacity: 0.5;
+}
+
+
+/* Fried Rice Positions */
+.indo-rice1 {
+  top: -254px;
+  left: 120px;
+  width: 250px;
+}
+
+.indo-rice2 {
+  top: -350px;
+  left: 300px;
+  width: 200px;
+}
+
+.indo-rice3 {
+  top: -506px;
+  left: 319px;
+  width: 185px;
+}
+
+.indo-egg {
+  top: -527px;
+  left: 64px;
+  width: 350px;
+}
+
+.indo-kerupuk1 {
+  top: -230px;
+  left: 400px;
+  width: 150px;
+}
+
+.indo-kerupuk2 {
+  top: -345px;
+  left: 460px;
+  width: 120px;
+}
+
+
+
+.lunchbox {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  z-index: 2;
+}
+
+.lunchbox-bg {
+  width: 100%;
+  display: block;
+}
+
+
+.rice-group,
+.egg-group,
+.kimchi-group {
+  position: absolute;
+}
+
+.riceSection, .eggSection, .kimchiSection {
+  position: absolute;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.riceSection:hover,
+.eggSection:hover,
+.kimchiSection:hover {
+  opacity: 0.5;
+}
+
+.rice1 {
+  width: 220px;
+  right: -380px;
+  top: -570px;
+}
+.rice2 {
+  width: 210px;
+  left: 38px;
+  top: -565px;
+}
+.rice3 {
+  width: 210px;
+  right: -372px;
+  bottom: 145px;
+}
+.rice4 {
+  width: 210px;
+  left: 20px;
+  bottom: 132px;
+}
+
+/* Kimchi */
+.kimchi1 {
+  width: 120px;
+  top: -560px;
+  left: 540px;
+}
+.kimchi2 {
+  width: 140px;
+  top: -557px;
+  left: 440px;
+}
+.kimchi3 {
+  width: 145px;
+  top: -560px;
+  left: 370px;
+}
+
+/* Eggs */
+.egg1 {
+  width: 100px;
+  top: -350px;
+  left: 560px;
+}
+.egg2 {
+  width: 100px;
+  top: -360px;
+  left: 470px;
+}
+.egg3 {
+  width: 100px;
+  top: -360px;
+  left: 380px;
+}
+
+.speech {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffd4e394;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid #a06f8094;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.narrative {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #dae5ffa9;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 1px solid #7382a4a9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 10;
+}
+.yellow-bubble {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fffbdaa9;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid #d8b778;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
