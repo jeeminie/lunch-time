@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'gaegu';
+  src: url('assets/Gaegu-Regular.woff2') format('woff2'),
+       url('assets/Gaegu-Regular.woff') format('woff'),
+       url('assets/Gaegu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background: #fffaf0;
